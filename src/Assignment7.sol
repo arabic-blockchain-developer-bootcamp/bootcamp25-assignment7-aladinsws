@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract Assignment7 is ERC20 , Ownable {
     // Constructor to initialize the token
     // Fill in the parameters for the token name and symbol
-    constructor() ERC20("Dinar","TNDT") Ownable(msg.sender) {}
+    constructor(string memory _name, string memory _symbol) ERC20(_name,_symbol) Ownable(msg.sender) {}
 
     // Function to mint tokens
     // Fill in the visibility modifier to be external
